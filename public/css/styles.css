@@ -151,3 +151,22 @@ footer {
 .foot-content{
     padding:10px;
 }
+
+/*Historia.html*/
+
+.historia-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-historia1{
+    display: flex;
+    padding: 40px;
+}
+
+.p-historia{
+    margin: 20px;
+    width: 45%;
+}
