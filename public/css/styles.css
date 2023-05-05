@@ -161,12 +161,20 @@ footer {
     align-items: center;
 }
 
-.div-historia1{
+.div-historia{
     display: flex;
     padding: 40px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 20px;
 }
 
-.p-historia{
+.p-historia1{
     margin: 20px;
+    width: 45%;
+}
+
+.p-historia2{
     width: 45%;
 }
