@@ -18,5 +18,5 @@ app.get('/historia', (req, res) => {
 })
 
 app.get('/poneraprueba', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src/views/poneraprueba.html'))
+    res.sendFile(path.join(__dirname, 'public/views/poneraprueba.html'))
 })
