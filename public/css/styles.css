@@ -182,16 +182,12 @@ footer {
 }
 
 .section-video{
-    align-content: center;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
 } 
-
-#un-video{
-    width: 80%;
-}
 
 .p-historia2{
     width: 45%;

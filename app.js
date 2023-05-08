@@ -7,11 +7,16 @@ app.use(express.static(path.join(__dirname, '/public')))
 app.listen(3050, () => {console.log("El servidor esta funcionando http://localhost:3050/")});
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src/views/home.html'))
+    res.sendFile(path.join(__dirname, '/public/views/home.html'))
 });
 app.get('/historia', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src/views/historia.html'))
+    res.sendFile(path.join(__dirname, '/public/views/historia.html'))
 })
+
+app.get('/historia', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/js/script.js'))
+})
+
 app.get('/poneraprueba', (req, res) => {
     res.sendFile(path.join(__dirname, 'src/views/poneraprueba.html'))
 })
