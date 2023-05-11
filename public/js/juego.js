@@ -1,7 +1,6 @@
 window.onload = function(){
     console.log('el documento esta listo');
 
-
 let imagen1 = document.getElementById("fig1");
 let imagen2 = document.getElementById("fig2");
 let imagen3 = document.getElementById("fig3");
@@ -19,33 +18,31 @@ box1.addEventListener('dragover', function(e){
     e.preventDefault();}, false);
 box1.addEventListener('drop', soltado, false);
 
+box2.addEventListener('dragenter', function(e){
+    e.preventDefault()}, false);
+box2.addEventListener('dragover', function(e){
+    e.preventDefault();}, false);
+box2.addEventListener('drop', soltado, false);
 
-
-
-
+box3.addEventListener('dragenter', function(e){
+    e.preventDefault()}, false);
+box3.addEventListener('dragover', function(e){
+    e.preventDefault();}, false);
+box3.addEventListener('drop', soltado, false);
 
 function arrastrado(e){
     elemento=e.target;
     e.dataTransfer.setData('Text', elemento.getAttribute('id'));
 }
 
-
 async function soltado(e){
     e.preventDefault();
     let transfer=e.dataTransfer.getData('Text');
-    let imagen=document.getElementById(transfer);
+    let imagen = document.getElementById(transfer);
     imagen.style.display= 'none';
-     e.target.innerHTML='<img src="'+imagen.src+'" height="400px" width="275px">';
-    contador++
-
-
+     e.target.innerHTML='<img src="'+imagen.src+'" height="400px" width="290px">';
 }
-
 }
-
-
-
-
-
-
-
+function reiniciar(){
+    window.location.reload();
+}

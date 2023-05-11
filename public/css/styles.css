@@ -247,6 +247,7 @@ header.juego{
 .gamepart2{
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 5px;
 }
 
@@ -258,7 +259,7 @@ header.juego{
 }
 
 img#fig1,img#fig2,img#fig3{
-    width: 275px;
+    width: 290px;
     height: 400px;
 }
 
