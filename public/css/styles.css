@@ -227,17 +227,18 @@ header.juego{
 .gamepart1{
     display: flex;
     flex-direction: row;
-    margin: 0px 40px 0px 0px;
+    margin: 0px 40px 40px 0px;
 }
 
 .box{
-    width: 270px;
-    height: 380px;
+    width: 290px;
+    height: 400px;
     background-color: grey;
     border: 2px solid black;
     display: flex;
     justify-content: space-around;
 }
+
 
 .box:hover{
     background-color: #1d1d1d;
@@ -248,3 +249,16 @@ header.juego{
     align-items: center;
     gap: 5px;
 }
+
+.box-game2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+}
+
+img#fig1,img#fig2,img#fig3{
+    width: 275px;
+    height: 400px;
+}
+
