@@ -7,7 +7,7 @@ body{
     background-color: #181D31;
     color: #E6DDC4;
 }
-
+/*Barra de navegación superior*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -39,6 +39,35 @@ li{
     padding: 10px;
 }
 
+rect#monitor{
+    animation: parte1 ease-in 5s  ;
+    animation-iteration-count:1 ;
+    }
+
+
+@keyframes parte1{
+    0%{
+        transform:translate(0, -10px);
+        opacity:0;
+    }
+    20%{
+        transform:translate(0, -10px);
+        opacity: 0;
+    }
+    30%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    90%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+/*fin de barra de navegación*/
 header{
     background: url(../img/codigo.jpg) 50% 0 fixed ;
     background-size: cover;
